@@ -50,3 +50,39 @@ img {
 p {
     line-height: 1.7;
 }
+
+/* specific styling */
+/* mobile first response */
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header__block"
+        "grow__together__block"
+        "flowing__conversations__block"
+        "your__users__block"
+        "footer__block";
+    gap: 4rem;
+    justify-items: center;
+    /* style 1st component - mobile */
+    min-width: 37.5rem;   
+}
+
+.header_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header__block__company--logo header__block__trial--button"
+    "header__block_product--title header__block_product--title"
+    "header__block_product--info header__block_product--info"
+    "header__block__product__trial--button header__block__product__trial--button"
+    "header__block__product--illustration header__block__product--illustration";
+    gap: 4rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--clr-neutral-very-pale-cyan);
+    background-image: url("./images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -10rem;
+}
