@@ -4,19 +4,22 @@
 
 :root {
  /* color */
- --clr-primary-pink: hsl(322, 100%, 66%);
- --clr-neutral-very-pale-cyan: hsl(193, 100%, 96%);
- --clr-neutral-very-dark-cyan: hsl(192, 100%, 9%);
- --clr-neutral-grayish-blue: hsl(208, 11%, 55%);
- --white: #fff;
+
+    --clr-primary-pink: hsl(322, 100%, 66%);
+    --clr-neutral-very-pale-cyan: hsl(193, 100%, 96%);
+    --clr-neutral-very-dark-cyan: hsl(192, 100%, 9%);
+    --clr-neutral-grayish-blue: hsl(208, 11%, 55%);
+    --white: #fff;
  
  /* fonts */
- --ff-primary: 'Open Sans', sans-serif;
- --ff-secondary: 'Poppins', sans-serif;
 
- --fw-400; 500;
- --fs-600; 600;
  --fs-700; 700;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
+
+    --fw-400; 500;
+    --fs-600; 600;
+    --fs-700; 700;
 }
 
 *,
@@ -172,7 +175,7 @@ p {
     margin-bottom: 4rem;
 }
 
-.grow__together__block--featue-title,
+.grow__together__block--feature-title,
 .flowing__conversations__block--feature-title,
 .your__users__block--feature-title {
     font-size: 2.4rem;
