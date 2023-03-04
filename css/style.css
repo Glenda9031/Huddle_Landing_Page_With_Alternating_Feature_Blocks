@@ -338,3 +338,242 @@ p {
 
 /* desktop second approach */
 
+@media screen and (min-width: 48rem) {
+    /* desktop - component 1 styling */
+
+    .header-block {
+        grid-template-columns: 0.75fr 1.25fr;
+        grid-template-areas:
+            "header-block__company-logo header-block__trial-button"
+            "header-block__product-title header-block__product-illustration"
+            "header-block__product-info header-block__product-illustration"
+            "header-block__product-trial-button header-block__product-illustration";
+        grid-template-rows: 9rem 21rem 8rem auto;
+        gap: 3rem 2rem;
+        padding: 4rem 10rem 8rem 10rem;
+        background-image:url("../images/bg-hero-desktop.svg");
+        background-position: 0;
+    }
+
+    .header-block__company-logo {
+        width: 35%;
+    }
+
+    .header-block__trial-button {
+        width: 25%;
+        padding: 1.4rem 0;
+        margin-right: 4rem;
+        box-shadow: 0 0 0.4rem var(--clr-neutral-grayish-blue);
+    }
+
+    .header-block__product-title {
+        text-align: start;
+        font-size: 3.5rem;
+        margin: 0
+        align-self: flex-end;
+    }
+
+    .header-block__product-info {
+        text-align: start;
+        width: 100%;
+    }
+
+    .header-block__product-trial-button {
+        margin: 0;
+        width: 55%;
+        align-self: flex-start;
+        padding: 1.6rem;
+    }
+
+    .header-block__product-illustration {
+        width: 90%;
+        justify-self: center;
+    }
+
+    /* destop - component 2, 3, 4 styling */
+
+    .grow-together-block,
+    .your-users-block,
+    .flowing-conversations-block {
+        /* as per design set new values for padding, gap */
+        width: 82%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem 16rem;
+        padding: 4rem 2rem 4rem 12rem
+    }
+
+    .grid-together-block {
+        grid-template-areas:
+            "grow-togehter-block__feature-title grow-together-block__feature-image"
+            "grow-together-block__feature-info grow-together-block__feature-image";
+    }
+
+    .flowing-conversations-block {
+        grid-template-areas: 
+            "flowing-conversations-bock__feature-image flowing-conversations-block__feature-title"
+            "flowing-conversations-block__feature-image flowing-conversations-block__feature-image";
+    }
+
+    .your-users-block {
+        grid-template-areas:
+            "your-users-block__feature-title your-users-block__feature-image"
+            "your-users-block__feature-info your-users-block__feature-image";
+    }
+
+    .grow-together-block__feature-title,
+    .your-users-block__feature-title,
+    .flowing-conversations-block__feature-title {
+        text-align: start;
+        align-self: flex-end;
+        justify-self: start;
+    }
+
+    .grow-together-block__feature-info,
+    .your-users-block__feature-info,
+    .flowing-conversations-block__feature-info {
+        text-align: start;
+        justify-self: start;
+    }
+
+    .grow-together-block__feature-image,
+    .your-users-block__feature-image,
+    .flowing-conversations-block__feature-image {
+        /* reset values from mobile styline */
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* desktop - component 5 styline */
+
+    .footer-block {
+        grid-template-columns: 1.8fr 0.5fr 0.5fr 1.2fr;
+        grid-template-areas:
+            "footer-block__trial-info footer-block__trial-info footer-block__trial-info footer-block__trial-info"
+            "footer-block__company-logo . . ."
+            "footer-block__loocation-details footer6-block__about-us footer-block__career 6footer-block__social-component"
+            "footer-block__loocation-details footer-block__what-we-do footer-block__blog ."
+            "footer-bl6ock__phone-details footer-block__faq footer-block__contact-us ."
+            "footer-block__email-details . . ."
+            ". . . footer-block__copyright";
+            grid-template-rows: auto auto 3.5rem 3.5rem 3.5rem auto auto;
+            gap: 1rem 12rem;
+            padding: 0 10rem 6rem 10rem;
+    }
+
+    .footer-block__trial-info {
+        width: 65%;
+        margin: 0 auto 8rem auto;
+        padding: 6rem 0;
+    }
+
+    .footer-block-trial-info__title {
+        font-size: 3rem;
+    }
+
+    .footer-block-trial-info__button {
+        width: 45%;
+        padding: 2.5rem 0;
+        font-size: 1.6rem;
+        border-radius: 5rem;
+        font-family: var(--ff-secondary);
+    }
+
+    .footer-block__company-logo {
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-block__about-us,
+    .footer-block__contact-us,
+    .footer-block__phone-details,
+    .footer-block__email-detaills {
+        /* reset margin from mobile layout */
+        margin: 0;
+    }
+}
+
+/* grid area names */
+
+/*coponent 1 */
+
+.header-block {
+    grid-area: header-block;
+}
+
+.header-block__company-logo {
+    grid-area: header-block__company-logo;
+}
+
+.header-block__trial-button {
+    grid-area: header-block__trial-button;
+}
+
+.header-block__product-title {
+    grid-area: header-block__product-title;
+}
+
+.header-block__product-info {
+    grid-area: header-block__product-info;
+}
+
+.header-block__product-trial-button {
+    grid-area: header-block__product-trial-button;
+}
+
+.header-block__product-illustration {
+    grid-area: header-block__product-illustration;
+}
+
+/* component 2 */
+
+.grow-together-block {
+    grid-area: grow-together-block;
+}
+
+.grow-together-block__feature-image {
+    grid-area: grow-together-block__feature-image;
+}
+
+.grow-together-block__feature-title {
+    grid-area: grow-together-block__feature-title;
+}
+
+.grow-together-block__feature-info {
+    grid-area: grow-together-block__feature-info;
+}
+
+/* component 3 */
+
+.flowing-conversations-block {
+    grid-area: flowing-conversations-block;
+}
+
+.flowing-conversations-block__feature-image {
+    grid-area: flowing-conversations-block__feature-image;
+}
+
+.flowing-conversations-block__feature-title {
+    grid-area: flowing-conversations-block__feature-title;
+}
+
+.flowing-conversations-block__feature-info {
+    grid-area: flowing-conversations-block__feature-info;
+}
+
+/* component 4 */
+
+.your-users-block {
+    grid-area: your-users-block;
+}
+
+.your-users-block__feature-image {
+    grid-area: your-users-block__feature-image;
+}
+
+.your-users-block__feature-title {
+    grid-area: your-users-block__feature-title;
+}
+
+.your-users-block__feature-info {
+    grid-area: your-users-block__feature-info;
+}
+
